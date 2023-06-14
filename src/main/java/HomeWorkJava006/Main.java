@@ -37,9 +37,9 @@ public class Main {
         Integer size = in.nextInt();
 
         System.out.println("Можем Вам предложить: ");
-        for (Notebook notebook : newList) {
-            if (notebook.ramSize >= size) {
-                System.out.println(notebook);
+        for (int i = 0; i < newList.size(); i++) {
+            if (newList.get(i).ramSize >= size) {
+                System.out.println(newList.get(i));
             }
         }
     }
